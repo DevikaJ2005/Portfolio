@@ -563,3 +563,14 @@ footer { background: var(--ink); color: var(--paper); padding: 1.7rem 3rem; disp
   .hero-r { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; }
   .hsc-n { font-size: 2rem; }
 }
+
+/* Additional mobile fixes */
+@media(max-width: 480px) {
+  .al { position: static; } /* Disable sticky positioning on mobile for better scrolling */
+  .pbox { width: 180px; height: 180px; margin: 0 auto; } /* Smaller photo box on very small screens */
+  .hero-r { grid-template-columns: 1fr; gap: .5rem; } /* Stack stat cards vertically */
+  .hsc-n { font-size: 1.8rem; min-width: auto; } /* Smaller stat numbers */
+  .hbtns { flex-direction: column; align-items: center; gap: .5rem; } /* Stack buttons vertically */
+  .ctgrid { grid-template-columns: 1fr; gap: 2rem; } /* Stack contact sections */
+  footer { flex-direction: column; text-align: center; gap: 1rem; } /* Stack footer items */
+}
