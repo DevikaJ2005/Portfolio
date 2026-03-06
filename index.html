@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- ════ PAGE TITLE — edit here ════ -->
+  <title>Devika J — CS Student · Software Developer</title>
+  <meta name="description" content="Devika J — BSc Computer Science, MOP Vaishnav College. Backend Developer, Team Lead, Conference Presenter. Open to software engineering internships 2025."/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════
+     CURSOR (do not remove)
+════════════════════════════════════════ -->
+<div id="cdot"></div>
+<div id="cring"></div>
+
+
+<!-- ════════════════════════════════════════
+     MARQUEE — top ticker bar
+     Edit the text between <span> tags
+════════════════════════════════════════ -->
+<div id="mq">
+  <div class="mt">
+    <span>Devika J</span><span class="d">✦</span>
+    <span>Full-Stack Developer</span><span class="d">✦</span>
+    <span>Frontend Developer</span><span class="d">✦</span>
+    <span>Backend Developer</span><span class="d">✦</span>
+    <span>Team Lead</span><span class="d">✦</span>
+    <span>Open to Internships</span><span class="d">✦</span>
+    <span>MOP Vaishnav College · Chennai</span><span class="d">✦</span>
+    <span>B.Sc.Computer Science </span><span class="d">✦</span>
+    <span>Student</span><span class="d">✦</span>
+
+
+    <!-- duplicate below — keeps the scroll seamless, keep in sync with above -->
+    <span>Devika J</span><span class="d">✦</span>
+    <span>Full-Stack Developer</span><span class="d">✦</span>
+    <span>Frontend Developer</span><span class="d">✦</span>
+    <span>Backend Developer</span><span class="d">✦</span>
+    <span>Team Lead</span><span class="d">✦</span>
+    <span>Open to Internships</span><span class="d">✦</span>
+    <span>MOP Vaishnav College · Chennai</span><span class="d">✦</span>
+    <span>B.Sc.Computer Science </span><span class="d">✦</span>
+    <span>Student</span><span class="d">✦</span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════ -->
+<nav id="nav">
+  <a href="#hero" class="nl">DJ.</a>
+
+  <ul class="nlinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Journey</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-r">
+    <!-- ════ RESUME LINK — make sure Devika_resume-1.pdf is in the same folder ════ -->
+    <a href="Devika_resume-1.pdf" download class="ncv">RESUME ↓</a>
+    <button class="hbg" id="hbg" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile drawer (hamburger opens this) -->
+<div id="drawer">
+  <a href="#about"      onclick="closeDrawer()">About</a>
+  <a href="#skills"     onclick="closeDrawer()">Skills</a>
+  <a href="#projects"   onclick="closeDrawer()">Projects</a>
+  <a href="#experience" onclick="closeDrawer()">Journey</a>
+  <a href="#contact"    onclick="closeDrawer()">Contact</a>
+  <a href="Devika_resume-1.pdf" download onclick="closeDrawer()">Download CV ↓</a>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     HERO SECTION
+     Edit: name, badge text, tagline
+════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hwm">DJ</div>
+
+  <div class="hero-l">
+
+    <!-- small line above name — edit college/year here -->
+    <div class="h-eye">BSc CS · 2nd Year · MOP Vaishnav College · Chennai</div>
+
+    <!-- ════ YOUR NAME ════ -->
+    <h1 class="hname">Devika <span class="si">J.</span></h1>
+
+    <!-- ════ BADGE below name ════ -->
+   <!-- <div class="hero-badge">
+      <span class="dot">✦</span>
+      Conference Speaker · ICCCMIT 2026
+    </div> -->
+
+    <!-- ════ TAGLINE ════ -->
+    <p class="htag">
+      <b>Team Lead &amp; Backend Developer</b> — shipped a live product,
+      presented at an international conference, and built a Chrome Extension,
+      all while being in 2nd year.
+      <b>Open to software engineering internships</b> across any domain.
+    </p>
+
+    <div class="hbtns">
+      <a href="#projects" class="bsolid">See My Work →</a>
+      <a href="#contact"  class="bghost">Let's Connect →</a>
+    </div>
+  </div>
+
+  <!-- ════ STAT CARDS — edit numbers/labels here ════ -->
+  <div class="hero-r">
+    <div class="hsc rv">
+      <div class="hsc-n">7.3</div>
+      <div class="hsc-i">
+        <div class="hsc-t">CGPA</div>
+        <div class="hsc-s">BSc Computer Science</div>
+      </div>
+    </div>
+    <div class="hsc rv">
+      <div class="hsc-n">2</div>
+      <div class="hsc-i">
+        <div class="hsc-t">Projects Shipped</div>
+        <div class="hsc-s">Full stack app + Chrome Extension</div>
+      </div>
+    </div>
+    <div class="hsc rv">
+      <div class="hsc-n">1</div>
+      <div class="hsc-i">
+        <div class="hsc-t">Paper Presented</div>
+        <div class="hsc-s">ICCCMIT 2026 · International Conf.</div>
+      </div>
+    </div>
+    <div class="hsc rv">
+      <div class="hsc-n">4</div>
+      <div class="hsc-i">
+        <div class="hsc-t">Certifications</div>
+        <div class="hsc-s">Google Cloud · MongoDB · Power BI</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scue"><div class="scue-b"></div>scroll</div>
+</section>
+
+<div class="dv"><div class="dv-lbl">About Devika</div><div class="dv-line"></div><div class="dv-num">01 / 06</div></div>
+
+
+<!-- ════════════════════════════════════════
+     ABOUT SECTION
+     LEFT = photo + nameplate
+     RIGHT = heading + bio + facts + now box
+════════════════════════════════════════ -->
+<section id="about">
+<div class="ag">
+
+  <!-- ════ LEFT COLUMN ════ -->
+  <div class="al rvl">
+
+    <!-- ════ YOUR PHOTO ════
+         Step 1: save your photo as "photo.jpg" in the same folder
+         Step 2: replace the div.pph block below with:
+                 <img src="photo.jpg" alt="Devika J"/>
+    -->
+    <div class="pbox">
+      <img src="photo.jpg.jpeg" alt="Devika J"/>
+
+    </div>
+
+    <!-- name plate under photo — edit name/role/location here -->
+    <div class="aplate">
+      <div class="aplate-name">Devika J.</div>
+      <div class="aplate-role"> Student , Tech Enthusiast </div>
+    </div>
+
+  </div>
+
+  <!-- ════ RIGHT COLUMN ════ -->
+  <div>
+
+    <!--<div class="stag rv">// Know Mee !! </div>-->
+
+    <!-- ════ ABOUT HEADING ════ -->
+    <h2 class="sh rv">Get<br/>to <em>Know Mee !!</em></h2>
+
+    <!-- ════ BIO PARAGRAPHS — edit your about text here ════ -->
+    <p class="bio rv">
+      Still in college. Already building. I'm a 2nd year CS student focused on
+      writing code that's <b>clean, structured, and actually useful</b>.
+      I care about understanding how systems behave — not just making them run.
+    </p>
+
+    <p class="bio rv">
+      I've led teams, shipped live products, and taken my work to an
+      <b>international conference stage</b> — all before finishing 2nd year.
+      I'm here to grow fast, and I'm not waiting until graduation to start.
+    </p>
+
+    <!-- quick facts grid — edit values in .iv cells -->
+    <div class="igrid rv">
+      <div class="ic"><div class="ik">Degree</div>  <div class="iv">BSc Computer Science</div></div>
+      <div class="ic"><div class="ik">College</div>  <div class="iv">MOP Vaishnav College for Women</div></div>
+      <div class="ic"><div class="ik">Year</div>     <div class="iv">2nd Year · 2024 – 2027</div></div>
+      <div class="ic"><div class="ik">CGPA</div>     <div class="iv">7.3</div></div>
+      <div class="ic"><div class="ik">Location</div> <div class="iv">Chennai, Tamil Nadu</div></div>
+      <div class="ic"><div class="ik">Status</div>   <div class="iv open">● Open to Internships</div></div>
+    </div>
+
+    <!-- currently working on — edit the list items here -->
+    <div class="nowbox rv">
+      <div class="nowtitle">// Right Now I'm</div>
+      <ul class="nowlist">
+        <li>Strengthening DSA, OS and Computer Networks fundamentals</li>
+        <li>Building more full stack projects with React + Node.js</li>
+        <li>Learning about scalable system design and cloud deployment</li>
+        <li>Actively applying for software engineering internships</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<div class="dv"><div class="dv-lbl">Technical Skills</div><div class="dv-line"></div><div class="dv-num">02 / 06</div></div>
+
+
+<!-- ════════════════════════════════════════
+     SKILLS SECTION
+     Edit: skill pills inside each .b block
+════════════════════════════════════════ -->
+<section id="skills">
+  <div class="sktop rv">
+    <h2 class="skh">My<br/><em>Stack</em></h2>
+    <p class="sknote">Languages, frameworks, and tools I work with.</p>
+  </div>
+  <div class="bento">
+
+    <div class="b b1 rv" data-bg="01">
+      <div class="blbl">Programming</div>
+      <div class="btitle">Languages</div>
+      <div class="pills">
+        <span class="pill">Python</span>
+        <span class="pill">C++</span>
+        <span class="pill">JavaScript</span>
+      </div>
+    </div>
+
+    <div class="b b2 rv" data-bg="02">
+      <div class="blbl">Frontend</div>
+      <div class="btitle">Web UI</div>
+      <div class="pills">
+        <span class="pill">HTML5</span>
+        <span class="pill">CSS3</span>
+        <span class="pill">React</span>
+      </div>
+    </div>
+
+    <div class="b b3 rv" data-bg="03">
+      <div class="blbl">Backend</div>
+      <div class="btitle">Server</div>
+      <div class="pills">
+        <span class="pill">Node.js</span>
+        <span class="pill">Express.js</span>
+        <span class="pill">REST APIs</span>
+      </div>
+    </div>
+
+    <div class="b b4 rv" data-bg="04">
+      <div class="blbl">Databases</div>
+      <div class="btitle">Data Layer</div>
+      <div class="pills">
+        <span class="pill">MongoDB Atlas</span>
+        <span class="pill">SQL</span>
+        <span class="pill">Mongoose ODM</span>
+      </div>
+    </div>
+
+    <!-- 
+    <div class="b b5 rv" data-bg="05">
+      <div class="blbl">Tools & Platforms</div>
+      <div class="btitle">Workflow</div>
+      <div class="pills">
+      <span class="pill">Git & GitHub</span>
+      <span class="pill">Power BI</span>
+      </div>
+    </div>
+    -->
+
+    <div class="b b6 rv" data-bg="∞">
+      <div class="b6row">
+        <div>
+          <div class="blbl">Mindset</div>
+          <div class="btitle">Methodical · Structured · Always Learning</div>
+        </div>
+        <div class="pills">
+          <span class="pill">Team Leadership</span>
+          <span class="pill">Problem Solving</span>
+          <span class="pill">Adaptability</span>
+          <span class="pill">Communication</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="dv"><div class="dv-lbl">Selected Work</div><div class="dv-line"></div><div class="dv-num">03 / 06</div></div>
+
+
+<!-- ════════════════════════════════════════
+     PROJECTS SECTION
+════════════════════════════════════════ -->
+<section id="projects">
+  <div class="ptop rv">
+    <h2 class="ph">Selected<br/><em>Projects</em></h2>
+    <a href="https://github.com/DevikaJ2005" target="_blank" class="pghl">All on GitHub</a>
+  </div>
+
+  <!-- ════ FEATURED PROJECT — PlanMyEvent ════ -->
+  <div class="feat rv">
+    <div class="fimg">
+      <!--
+        ADD SCREENSHOT:
+        1. Visit https://planmyevent.onrender.com/
+        2. Take a screenshot
+        3. Save as "images/planmyevent.png" next to this HTML file
+        4. Replace the div.fph below with:
+           <img src="images/planmyevent.png" alt="PlanMyEvent"/>
+      -->
+      <div class="fph">
+        <div class="fphg"></div>
+        <div class="fph-ico"></div>
+        <div class="fph-txt">Add screenshot of planmyevent.onrender.com</div>
+      </div>
+      <div class="fov">
+        <a href="https://github.com/DevikaJ2005" target="_blank" class="fbtn fg">⌥ GitHub Repo</a>
+        <a href="https://planmyevent.onrender.com/" target="_blank" class="fbtn fl">↗ Live Demo</a>
+      </div>
+    </div>
+    <div class="finfo">
+      <div>
+        <div class="fbadge">Featured Project · Group Project</div>
+        <div class="ftitle">PlanMyEvent</div>
+        <div class="frole">Team Lead & Backend Developer</div>
+        <!-- ════ PROJECT DESCRIPTION — edit here ════ -->
+        <p class="fdesc">
+          A full stack event planning web application. I owned the entire backend —
+          built RESTful APIs with Node.js &amp; Express, integrated MongoDB Atlas for
+          cloud storage, managed deployment on Render, and contributed to frontend
+          integration. Led the team from planning to delivery.
+        </p>
+        <div class="fstack">
+          <span class="ftag">Node.js</span>
+          <span class="ftag">Express.js</span>
+          <span class="ftag">MongoDB Atlas</span>
+          <span class="ftag">JavaScript</span>
+        </div>
+      </div>
+      <div class="flinks">
+        <a href="https://github.com/DevikaJ2005" target="_blank" class="flink">GitHub Repo ↗</a>
+        <a href="https://planmyevent.onrender.com/" target="_blank" class="flink">Live Demo ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════ SMALL CARDS ════ -->
+  <div class="cgrid">
+
+    <!-- Chrome Extension -->
+    <div class="pc rv">
+      <div class="pcimg">
+        <!--
+          Replace with: <img src="images/extension.png" alt="Smart Content Simplifier"/>
+        -->
+        <div class="pcph"><span></span></div>
+        <div class="pcov">
+          <a href="https://github.com/DevikaJ2005/Smart-Content-Simplifier" target="_blank" class="pcb g">GitHub</a>
+        </div>
+      </div>
+      <div class="pcbody">
+        <div class="pcn">02 · Chrome Extension</div>
+        <div class="pct">Smart Content Simplifier</div>
+        <p class="pcd">Chrome extension for distraction-free browsing — Reader Mode via DOMParser, website blocking, and a focus timer using Chrome Tabs, Storage &amp; Alarms APIs.</p>
+        <div class="pcf">
+          <div class="pctags">
+            <span class="pctag">JavaScript</span>
+            <span class="pctag">Chrome API</span>
+            <span class="pctag">DOMParser</span>
+          </div>
+          <div class="pcicons">
+            <a href="https://github.com/DevikaJ2005/Smart-Content-Simplifier" target="_blank" class="pcic" title="GitHub">⌥</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Research Paper -->
+    <div class="pc res rv">
+      <div class="pcimg">
+        <div class="pcph" style="background:var(--ink);"><span></span></div>
+        <div class="pcov" style="background:rgba(232,56,13,.9);">
+          <span style="color:white;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;text-align:center;padding:0 1rem;line-height:1.5;">Presented · ICCCMIT 2026</span>
+        </div>
+      </div>
+      <div class="pcbody">
+        <div class="pcn">Conference Paper · 2026</div>
+        <div class="pct">Cognitive Overload Reduction System</div>
+        <p class="pcd">Proposed a browser-based system to reduce interface-induced cognitive overload using Cognitive Load Theory principles. Presented at ICCCMIT 2026.</p>
+        <div class="pcf">
+          <div class="pctags">
+            <span class="pctag">HCI</span>
+            <span class="pctag">Research</span>
+            <span class="pctag">CLT</span>
+          </div>
+          <span class="cbadge">ICCCMIT 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- GitHub CTA -->
+    <div class="pc rv" style="background:var(--ink);border-color:var(--ink);">
+      <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:2.2rem 1.8rem;flex:1;min-height:270px;">
+        <div style="font-family:var(--fd);font-size:2.6rem;color:var(--paper);margin-bottom:.8rem;line-height:1;">+</div>
+        <div style="font-family:var(--fd);font-size:1.3rem;color:var(--paper);margin-bottom:.65rem;letter-spacing:.04em;">More on GitHub</div>
+        <p style="font-size:.64rem;color:#555;line-height:1.85;margin-bottom:1.3rem;">All repos, experiments &amp; contributions.</p>
+        <a href="https://github.com/DevikaJ2005" target="_blank"
+           style="color:var(--accent);font-size:.6rem;letter-spacing:.14em;text-decoration:none;text-transform:uppercase;border-bottom:1px solid var(--accent);padding-bottom:2px;cursor:none;">
+          github.com/DevikaJ2005 →
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="dv"><div class="dv-lbl">Education & Experience</div><div class="dv-line"></div><div class="dv-num">04 / 06</div></div>
+
+
+<!-- ════════════════════════════════════════
+     EXPERIENCE / TIMELINE
+     Add more .tli blocks to add more entries
+════════════════════════════════════════ -->
+<section id="experience">
+<div class="expin">
+  <h2 class="exph rv">Education &amp;<br/><em>Experience</em></h2>
+  <div class="tl">
+
+    <!-- ════ TIMELINE ENTRY 1 ════ -->
+    <div class="tli rv">
+      <div class="tdate"><pre>2024 - <br/> 2027 </pre></div>
+      <div class="tbody">
+        <div class="trole">BSc Computer Science</div>
+        <div class="torg">MOP Vaishnav College for Women · Chennai</div>
+        <div class="tdesc">
+          CGPA: 7.3 · 2nd Year
+          <ul>
+            <li>Core subjects: Data Structures, Algorithms, DBMS, OS, Computer Networks, OOP</li>
+            <li>Active in research, academic collaborations, and project-based learning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════ TIMELINE ENTRY 2 ════ -->
+    <div class="tli rv">
+      <div class="tdate"><pre> 2025 -  <br/> 2025 </pre></div>
+      <div class="tbody">
+        <div class="trole">Team Lead · Backend Developer</div>
+        <div class="torg">PlanMyEvent · Group Project · planmyevent.onrender.com</div>
+        <div class="tdesc">
+          <ul>
+            <li>Built the entire backend — REST APIs with Node.js &amp; Express</li>
+            <li>Integrated MongoDB Atlas for cloud data persistence</li>
+            <li>Handled end-to-end deployment on Render; contributed to frontend integration</li>
+            <li>Led team coordination, task delegation, and on-time project delivery</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════ TIMELINE ENTRY 3 ════ -->
+    <div class="tli rv">
+      <div class="tdate"><pre> 2025 -  <br/> 2026 </pre></div>
+      <div class="tbody">
+        <div class="trole">Journal Coordinator · Team Lead</div>
+        <div class="torg">ICCCMIT 2026 · Paper Presented</div>
+        <div class="tdesc">
+          <ul>
+            <li>Coordinated full documentation, formatting, and conference submission workflow</li>
+            <li>Led team milestones and facilitated mentor communication throughout</li>
+            <li>Topic: Cognitive Overload Reduction System using Cognitive Load Theory</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<div class="dv"><div class="dv-lbl">Certifications</div><div class="dv-line"></div><div class="dv-num">05 / 06</div></div>
+
+
+<!-- ════════════════════════════════════════
+     CERTIFICATIONS
+     Add more .cc blocks to add certifications
+════════════════════════════════════════ -->
+<section id="certifications">
+<div class="certin">
+  <h2 class="certh rv">Certifi<em>cations</em></h2>
+  <div class="certgrid rv">
+
+    <div class="cc">
+      <div class="ccy">2025</div>
+      <div class="ccn">Google Cloud — Generative AI</div>
+      <div class="cci">IT-ITeS SSC, NASSCOM · FutureSkills Prime</div>
+    </div>
+
+    <div class="cc">
+      <div class="ccy">2025</div>
+      <div class="ccn">Power BI</div>
+      <div class="cci">Simplilearn · SkillUp Platform</div>
+    </div>
+
+    <div class="cc">
+      <div class="ccy">2024</div>
+      <div class="ccn">Introduction to MongoDB</div>
+      <div class="cci">MongoDB University · Official</div>
+    </div>
+
+    <!-- de-emphasised cert — add class "minor" to visually fade it -->
+    <div class="cc">
+      <div class="ccy">2024</div>
+      <div class="ccn">Financial Literacy</div>
+      <div class="cci">UNICEF</div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<div class="dv"><div class="dv-lbl">Get In Touch</div><div class="dv-line"></div><div class="dv-num">06 / 06</div></div>
+
+
+<!-- ════════════════════════════════════════
+     CONTACT SECTION
+════════════════════════════════════════ -->
+<section id="contact">
+<div class="ctgrid">
+
+  <div class="rvl">
+    <h2 class="cth">Let's<br/><em>Work</em><br/>Together</h2>
+    <!-- ════ CONTACT SUBTEXT — edit here ════ -->
+    <p class="cts">
+      Actively looking for internship opportunities — backend, full stack,
+      or any software engineering role. Open to all domains.
+      If you'd like to connect, reach out below.
+    </p>
+
+    <div class="chans">
+      <!-- Email rendered by JS to prevent spam encoding — edit in script.js -->
+      <div class="chan" id="emailchan" style="cursor:none;">
+        <div class="chanl">
+          <span class="chann">Email</span>
+          <span class="chanv" id="emailval">click to copy</span>
+        </div>
+        <span class="carr">⧉</span>
+      </div>
+
+      <a href="https://www.linkedin.com/in/devikaj2005/" target="_blank" class="chan">
+        <div class="chanl">
+          <span class="chann">LinkedIn</span>
+          <span class="chanv">linkedin.com/in/devikaj2005</span>
+        </div>
+        <span class="carr">↗</span>
+      </a>
+
+      <a href="https://github.com/DevikaJ2005" target="_blank" class="chan">
+        <div class="chanl">
+          <span class="chann">GitHub</span>
+          <span class="chanv">github.com/DevikaJ2005</span>
+        </div>
+        <span class="carr">↗</span>
+      </a>
+
+      <a href="Devika_resume-1.pdf" download class="chan">
+        <div class="chanl">
+          <span class="chann">Resume / CV</span>
+          <span class="chanv">Download PDF</span>
+        </div>
+        <span class="carr">↓</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="rv">
+    <!--
+      ════ ACTIVATE CONTACT FORM ════
+      1. Go to web3forms.com (free, takes 2 min)
+      2. Enter devikaj2005@gmail.com
+      3. Copy your access key
+      4. Paste it below replacing YOUR_KEY_HERE
+      ═══════════════════════════════════════════
+    -->
+    <form id="cform" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="755e6849-8ba2-459a-92d2-d3dc8ef27806"/>
+      <input type="hidden" name="subject"    value="Portfolio Inquiry — Devika J"/>
+      <input type="hidden" name="redirect"   value="false"/>
+
+      <div>
+        <label class="flbl">Your Name</label>
+        <input type="text"  name="name"    class="finp" placeholder="John Doe" required/>
+      </div>
+      <div>
+        <label class="flbl">Email Address</label>
+        <input type="email" name="email"   class="finp" placeholder="recruiter@company.com" required/>
+      </div>
+      <div>
+        <label class="flbl">Message</label>
+        <textarea           name="message" class="farea" placeholder="Hi Devika, I'd like to discuss an opportunity..." required></textarea>
+      </div>
+      <button type="submit" class="fsub" id="fsbtn">Send Message →</button>
+    </form>
+  </div>
+
+</div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer>
+  <div class="flogo" style="font-size: 0.80rem;">DJ.</div>
+  <div class="fcopy" style="font-size: 0.80rem;">© 2025 Devika J · Chennai · <span>♥</span></div>
+  <div class="ffl">
+    <a href="#hero" style="font-size: 0.80rem;">Top ↑</a>
+    <a href="https://github.com/DevikaJ2005" target="_blank" style="font-size: 0.80rem;">GitHub</a>
+    <a href="https://www.linkedin.com/in/devikaj2005/" target="_blank" style="font-size: 0.80rem;">LinkedIn</a>
+  </div>
+</footer>
+
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
