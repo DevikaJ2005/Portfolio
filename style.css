@@ -237,6 +237,32 @@ h1.hname .si { font-family: var(--fs); font-style: italic; color: var(--accent);
 .htag b { color: var(--ink); font-weight: 500; }
 
 /* CTA buttons */
+.hero-contact{
+  margin-top:14px;
+  font-size:.62rem;
+  letter-spacing:.12em;
+  color:var(--muted);
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:6px;
+}
+
+.hero-contact a{
+  text-decoration:none;
+  color:var(--ink);
+  border-bottom:1px solid transparent;
+  transition:all .2s;
+}
+
+.hero-contact a:hover{
+  color:var(--accent);
+  border-bottom-color:var(--accent);
+}
+
+.hero-contact .dot{
+  color:var(--border);
+}
 .hbtns { display: flex; gap: .85rem; flex-wrap: wrap; }
 .bsolid {
   background: var(--ink); color: var(--paper);
@@ -267,7 +293,12 @@ h1.hname .si { font-family: var(--fs); font-style: italic; color: var(--accent);
   backdrop-filter: blur(6px);
   border-radius: var(--r); transition: all .28s;
 }
-.hsc:hover { border-color: var(--ink); background: var(--white); transform: translateX(5px); box-shadow: 4px 4px 0 var(--ink); }
+.hsc:hover{
+  border-color: var(--ink);
+  background: var(--white);
+  transform: translateX(6px) translateY(-2px);
+  box-shadow: 6px 6px 0 var(--ink);
+}
 .hsc-n { font-family: var(--fd); font-size: 2.5rem; color: var(--ink); line-height: 1; flex-shrink: 0; min-width: 3.2rem; }
 .hsc-i { display: flex; flex-direction: column; gap: .1rem; }
 .hsc-t { font-size: .66rem; font-weight: 500; color: var(--ink); letter-spacing: .05em; }
