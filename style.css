@@ -263,6 +263,20 @@ h1.hname .si { font-family: var(--fs); font-style: italic; color: var(--accent);
 .hero-contact .dot{
   color:var(--border);
 }
+
+#hero-email {
+  cursor: pointer;
+  transition: all .2s;
+  color: var(--ink);
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+}
+
+#hero-email:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
 .hbtns { display: flex; gap: .85rem; flex-wrap: wrap; }
 .bsolid {
   background: var(--ink); color: var(--paper);

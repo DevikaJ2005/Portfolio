@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WY4GD5QK4G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WY4GD5QK4G');
+</script>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -118,10 +127,9 @@
       <a href="#contact"  class="bghost">Let's Connect →</a>
     </div>
 
+   
     <div class="hero-contact">
-      <span>Email: 
-        <a href="mailto:devikaj2005@gmail.com">devikaj2005@gmail.com</a>
-      </span>
+      <span>Email: <span id="hero-email" style="cursor:pointer;" onclick="navigator.clipboard.writeText('devikaj2005@gmail.com').then(()=>{this.textContent='✓ Copied!';setTimeout(()=>this.textContent='devikaj2005@gmail.com',2000)}) ">devikaj2005@gmail.com</span></span>
       <span class="dot"> • </span>
       <a href="https://github.com/DevikaJ2005" target="_blank">GitHub</a>
       <span class="dot"> • </span>
