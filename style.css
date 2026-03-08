@@ -616,6 +616,12 @@ footer { background: var(--ink); color: var(--paper); padding: 1.7rem 3rem; disp
   .hero-r { grid-template-columns: 1fr; gap: .5rem; } /* Stack stat cards vertically */
   .hsc-n { font-size: 1.8rem; min-width: auto; } /* Smaller stat numbers */
   .hbtns { flex-direction: column; align-items: center; gap: .5rem; } /* Stack buttons vertically */
+  .fimg { min-height: 200px; } /* Reduce featured image height on mobile */
+  .pcimg { height: auto !important; } /* Allow project card images to scale */
   .ctgrid { grid-template-columns: 1fr; gap: 2rem; } /* Stack contact sections */
   footer { flex-direction: column; text-align: center; gap: 1rem; } /* Stack footer items */
+}
+
+.pbox img, .fimg img, .pcimg img {
+  display: block;
 }
