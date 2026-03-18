@@ -136,3 +136,5 @@ if (form) {
     }
   });
 }
+/* ── DISABLE RIGHT CLICK ON PHOTO ── */
+document.querySelector('.pbox img').addEventListener('contextmenu', e => e.preventDefault());
